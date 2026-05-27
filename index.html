@@ -12,6 +12,11 @@
 <meta property="og:description" content="国産野菜と果実をまるごと搾った、無添加の生ドレッシング。野菜が主役になる、毎日のごほうび。" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="実り MINORI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="実り MINORI ｜ 国産野菜の無添加・生ドレッシング" />
+<meta name="twitter:description" content="国産野菜と果実をまるごと搾った、無添加の生ドレッシング。野菜が主役になる、毎日のごほうび。" />
+<meta name="format-detection" content="telephone=no" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,8 +24,50 @@
 
 <link rel="stylesheet" href="assets/css/style.css" />
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+<!-- JSなしでもコンテンツを表示（リビール演出の安全フォールバック） -->
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important;}</style></noscript>
+
+<!-- 構造化データ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "実り MINORI",
+      "description": "国産野菜の無添加・生ドレッシング",
+      "slogan": "野菜が、主役になる。"
+    },
+    {
+      "@type": "Product",
+      "name": "実り お試し4本セット",
+      "description": "人気の4種類（人参&りんご／玉ねぎ&米麹／完熟トマト&バジル／ごま&豆乳）を試せる初回限定セット。化学調味料・保存料不使用、国産野菜100%の生ドレッシング。",
+      "category": "ドレッシング",
+      "brand": { "@type": "Brand", "name": "実り MINORI" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "JPY",
+        "price": "2480",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "賞味期限はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "無添加・生ドレッシングのため、製造日から冷蔵で約60日です。開封後は10日を目安にお召し上がりください。" } },
+        { "@type": "Question", "name": "保存方法を教えてください。", "acceptedAnswer": { "@type": "Answer", "text": "要冷蔵（10℃以下）です。保存料を使用していないため、必ず冷蔵庫で保管し、開封後はお早めにお使いください。" } },
+        { "@type": "Question", "name": "アレルギー表示はありますか？", "acceptedAnswer": { "@type": "Answer", "text": "商品ごとに原材料・特定原材料を表示しています。「ごま&豆乳」にはごま・大豆を含みます。詳細は各商品ページをご確認ください。" } },
+        { "@type": "Question", "name": "定期購入の解約はできますか？", "acceptedAnswer": { "@type": "Answer", "text": "回数の縛りはなく、いつでも解約・お休みが可能です。マイページから手続きいただけます。" } },
+        { "@type": "Question", "name": "ギフトラッピングはできますか？", "acceptedAnswer": { "@type": "Answer", "text": "ご注文時にギフトボックス（+¥330）とメッセージカードをお選びいただけます。お祝いや贈りものにもどうぞ。" } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#top">本文へスキップ</a>
 
 <!-- ===== Header ===== -->
 <header class="site-header" id="siteHeader">
@@ -53,7 +100,7 @@
   </div>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
 
   <!-- ===== Hero ===== -->
   <section class="hero" aria-labelledby="heroHeading">
@@ -375,7 +422,7 @@
           <li>15日間の品質保証つき</li>
         </ul>
 
-        <a href="#" class="btn btn-primary btn-block" id="ctaOrder">お試しセットを注文する</a>
+        <a href="/cart/?item=trial-set" class="btn btn-primary btn-block" id="ctaOrder">お試しセットを注文する</a>
         <p class="offer-note">※ 定期縛りはありません。1回のみのご購入も可能です。</p>
       </div>
     </div>

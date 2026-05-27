@@ -69,13 +69,4 @@
   /* ----- Footer year ----- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  /* ----- Demo order button (no backend) ----- */
-  const ctaOrder = document.getElementById("ctaOrder");
-  if (ctaOrder) {
-    ctaOrder.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("ご注文ありがとうございます。\n（こちらはデモLPです。カート機能は実装されていません）");
-    });
-  }
 })();
